@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>For Ana Rita ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#FFF1F8;
+      --bg2:#FFF8EE;
+      --accent:#FF5D8F;
+      --muted:#6b6b6b;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    body{
+      background:linear-gradient(135deg,var(--bg1),var(--bg2));
+      display:flex;align-items:center;justify-content:center;padding:2rem;
+    }
+    .card{
+      width:100%;max-width:900px;background:rgba(255,255,255,0.75);backdrop-filter:blur(6px);
+      border-radius:20px;padding:2.2rem;box-shadow:0 10px 30px rgba(0,0,0,0.08);position:relative;overflow:hidden;
+    }
+    .headline{font-weight:800;font-size:2.2rem;margin:0 0 0.4rem;color:#3b1f2b;letter-spacing:0.4px}
+    .sub{font-weight:300;color:var(--muted);margin:0 0 1.2rem}
+
+    .message{
+      font-size:1.05rem;line-height:1.6;color:#4b2b3a;margin-bottom:1.25rem
+    }
+    .cta{display:inline-block;padding:0.6rem 1rem;border-radius:999px;background:linear-gradient(90deg,var(--accent),#FF8EB0);color:white;font-weight:600;text-decoration:none}
+
+    /* hearts floating */
+    .hearts{position:absolute;inset:0;pointer-events:none}
+    .heart{
+      position:absolute;width:36px;height:36px;transform-origin:center;opacity:0.9;animation:floatUp 7s linear infinite;
+    }
+    .heart svg{width:100%;height:100%}
+    @keyframes floatUp{
+      0%{transform:translateY(20vh) scale(0.8) rotate(-10deg);opacity:0}
+      10%{opacity:1}
+      50%{transform:translateY(-10vh) scale(1.05) rotate(6deg)}
+      100%{transform:translateY(-120vh) scale(0.7) rotate(20deg);opacity:0}
+    }
+    /* stagger positions */
+    .h1{left:8%;bottom:10%;animation-duration:8s;animation-delay:0s}
+    .h2{left:22%;bottom:5%;animation-duration:9s;animation-delay:1s}
+    .h3{left:50%;bottom:2%;animation-duration:7.5s;animation-delay:0.6s}
+    .h4{right:18%;bottom:8%;animation-duration:8.8s;animation-delay:0.2s}
+    .h5{right:6%;bottom:18%;animation-duration:10s;animation-delay:1.2s}
+
+    /* flowers along edges */
+    .flowers{position:absolute;left:-10px;top:-10px;opacity:0.95}
+    .flowers-right{position:absolute;right:-6px;bottom:-6px;opacity:0.95;transform:scaleX(-1)}
+
+    /* responsive */
+    @media (max-width:520px){
+      .headline{font-size:1.6rem}
+      .card{padding:1.3rem;border-radius:14px}
+      .heart{width:28px;height:28px}
+    }
+  </style>
+</head>
+<body>
+  <div class="card" role="main" aria-label="A love note for Ana Rita">
+    <div class="flowers" aria-hidden="true">
+      <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <circle cx="24" cy="28" r="10" fill="#FFD1E6" />
+          <circle cx="40" cy="18" r="8" fill="#FFEFE6" />
+          <circle cx="14" cy="44" r="6" fill="#FFDEE8" />
+          <ellipse cx="66" cy="40" rx="18" ry="8" fill="#FFF1F4"/>
+        </g>
+      </svg>
+    </div>
+
+    <h1 class="headline">My dear and lovely <span style="color:var(--accent)">Ana Rita</span> ❤️</h1>
+    <p class="sub">A tiny page made with flowers because you never got any.</p>
+
+    <p class="message">Ana Rita — I really like you and admire you, my beautiful horny princess. I hope this brings a smile on your face PS. Shaz🌸💖</p>
+
+    <a href="#" class="cta" onclick="pulse();return false;">For you</a>
+
+    <div class="hearts" aria-hidden="true">
+      <div class="heart h1">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="var(--accent)" d="M12 21s-7.5-4.6-9.3-7.3C-0.5 9.6 3 5 6.6 6.1c1.6.5 2.9 2.2 2.9 2.2s1.3-1.7 2.9-2.2C21 5 24.5 9.6 21.3 13.7 19.5 16.4 12 21 12 21z"/></svg>
+      </div>
+      <div class="heart h2">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#FF8EB0" d="M12 21s-7.5-4.6-9.3-7.3C-0.5 9.6 3 5 6.6 6.1c1.6.5 2.9 2.2 2.9 2.2s1.3-1.7 2.9-2.2C21 5 24.5 9.6 21.3 13.7 19.5 16.4 12 21 12 21z"/></svg>
+      </div>
+      <div class="heart h3">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#FF3D6B" d="M12 21s-7.5-4.6-9.3-7.3C-0.5 9.6 3 5 6.6 6.1c1.6.5 2.9 2.2 2.9 2.2s1.3-1.7 2.9-2.2C21 5 24.5 9.6 21.3 13.7 19.5 16.4 12 21 12 21z"/></svg>
+      </div>
+      <div class="heart h4">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#FF7BA7" d="M12 21s-7.5-4.6-9.3-7.3C-0.5 9.6 3 5 6.6 6.1c1.6.5 2.9 2.2 2.9 2.2s1.3-1.7 2.9-2.2C21 5 24.5 9.6 21.3 13.7 19.5 16.4 12 21 12 21z"/></svg>
+      </div>
+      <div class="heart h5">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#FF4C83" d="M12 21s-7.5-4.6-9.3-7.3C-0.5 9.6 3 5 6.6 6.1c1.6.5 2.9 2.2 2.9 2.2s1.3-1.7 2.9-2.2C21 5 24.5 9.6 21.3 13.7 19.5 16.4 12 21 12 21z"/></svg>
+      </div>
+    </div>
+
+    <div class="flowers-right" aria-hidden="true">
+      <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <circle cx="96" cy="98" r="12" fill="#FFE3F0" />
+          <circle cx="80" cy="110" r="8" fill="#FFDEE8" />
+          <circle cx="110" cy="80" r="10" fill="#FFF1F4" />
+          <path d="M68 86c6-10 22-12 30-3" stroke="#FFD1E6" stroke-width="3" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <script>
+    function pulse(){
+      const card = document.querySelector('.card');
+      card.animate([
+        {transform: 'scale(1)'},
+        {transform: 'scale(1.03)'},
+        {transform: 'scale(1)'}
+      ],{ duration:420, easing:'cubic-bezier(.2,.9,.2,1)' });
+      for(let i=0;i<10;i++){
+        const e=document.createElement('div');e.className='heart';
+        e.style.left=(20+Math.random()*60)+'%';e.style.bottom='6%';
+        e.style.opacity='1';e.style.width='18px';e.style.height='18px';
+        e.style.animation='floatUp '+(3+Math.random()*3)+'s linear forwards';
+        e.innerHTML='<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="rgba(255,93,143,0.95)" d="M12 21s-7.5-4.6-9.3-7.3C-0.5 9.6 3 5 6.6 6.1c1.6.5 2.9 2.2 2.9 2.2s1.3-1.7 2.9-2.2C21 5 24.5 9.6 21.3 13.7 19.5 16.4 12 21 12 21z"/></svg>';
+        document.body.appendChild(e);
+        setTimeout(()=>e.remove(),4500);
+      }
+    }
+  </script>
+</body>
+</html>
